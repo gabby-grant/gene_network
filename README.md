@@ -73,6 +73,7 @@ Now you have `unique.merged.gcn.grn.tab` which can be used to create networks wi
 This code will create an overlap of the top 200 co-expressed genes.This code runs on the `gcn.tab` and remove the first column. And uses the `GRN-REMAPPED.tsv` file as the grn.
 Example usage:
 ```
+cut -f 2- -d $'\t' gcn.tsv > v2_gcn.tab # this can be used to remove the first column.
 chmod +x overlap-network.py
 python3 overlap-network.py --grn GRN-REMAPPED.tsv --gcn v2_gcn.tab --output overlap --visualize
 ```
