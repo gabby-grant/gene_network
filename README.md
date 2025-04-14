@@ -1,4 +1,4 @@
-# gene_network
+# Prepare Gene Network
 Workflow for gene co-expression and regulatory network 
 ## Gene Regulatory Network 
 Download and make grn.tab file
@@ -69,7 +69,8 @@ cat merged.gcn.grn.tab | uniq | sed 's/\s/\t/g' > unique.merged.gcn.grn.tab
 
 Now you have `unique.merged.gcn.grn.tab` which can be used to create networks with Cytoscape or NetworkX python library.
 
-# overlap_network
+# Visualize Networks
+## overlap_network
 This code will create an overlap of the top 200 co-expressed genes.This code runs on the `gcn.tab` and remove the first column. And uses the `GRN-REMAPPED.tsv` file as the grn.
 Example usage:
 ```
