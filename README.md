@@ -70,7 +70,7 @@ cat merged.gcn.grn.tab | uniq | sed 's/\s/\t/g' > unique.merged.gcn.grn.tab
 Now you have `unique.merged.gcn.grn.tab` which can be used to create networks with Cytoscape or NetworkX python library.
 
 # Visualize Networks
-## overlap_network
+## overlap_network.py
 This code will create an overlap of the top 200 co-expressed genes.This code runs on the `gcn.tab` and remove the first column. And uses the `GRN-REMAPPED.tsv` file as the grn.
 Example usage:
 ```
